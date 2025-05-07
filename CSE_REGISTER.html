@@ -2,73 +2,61 @@
  <head>
   <title>CSE REGISTER PAGE</title>
  </head>
-  <style>
+ <style>
  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
  
    body{
      margin:0;
      font-family:'Montserrat',sans-serif;
-     background: linear-gradient(150deg, #F56217 0%,#0B486B 100%);
+     background: linear-gradient(150deg, #0B486B 0%,#F56217 100%);
      display:flex;
      justify-content:center;
      align-items:center;
      height:100vh;
    }
+   
+   .container{
+    text-align:center
+    }
     
    .brand{
-     font-family:"Orbitron",sans-serif;
-     color:beige;
+     font-family:'Orbitron',sans-serif;
      font-size:3rem;
-     position:absolute;
-     display:flex;
-     margin-bottom:500px;
-     width:20%;
-     height:100vh;
-     justify-content:center;
-     align-items:center;
+     color:#FEF3E2;
+     margin-bottom:20px;
      letter-spacing:4px;
-     }
-     
-     .brand{
      transition: transform 1.0s ease, box-shadow 1.0s ease;
-     }
-     
-    .reg-box{
+   }
+   .loginbox{
      background:rgba(255, 255, 255, 0.2);
      padding:30px;
      border-radius:10% 10% 10% 10% / 10% 10% 10% 10%;
      box-shadow: 0 15px 10px 5px rgba(0,0,0,0.2);
      width:300px;
      margin:auto;
-     margin-top:220px;
      transition: transform 0.9s ease, box-shadow 0.9s ease;
      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
      border:1px;
    }
-     
-  .reg-box h2{
+   .loginbox h2{
      margin-bottom:30px;
-     margin-top:3px;
+     margin-top:5px;
      font-size:1.75rem;
-     color:#F0F0F0;
-     text-align:center;
+     color:#F0F0F0
    }
-     
-    .reg-box label{
+   .loginbox label{
      display:block;
      text-align:left;
      font-size:1rem;
      color:#F0F0F0;
      margin-top:10px;
      margin-bottom:5px;
-     font-weight:normal;
-     }
-     
-    .reg-box input{
+   }
+   .loginbox input{
      border:1px;
      border-radius:10px;
-     padding:5px 35px 5px 35px;
+     padding:7px 35px 7px 35px;
      font-size:1rem;
      background-color:rgba(255, 255, 255, 0.1 to 0.2);
      margin-bottom:10px;
@@ -76,12 +64,11 @@
      transition: transform 0.2s ease, box-shadow 0.2s ease;
      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
    }
-   
-  .reg-btn{
+   .login-btn{
      width:80%;
      border:1px;
      border-radius:10px;
-     padding:5px;
+     padding:7px;
      font-size:0.7rem;
      background-color:rgba(16, 32, 39,0.5);
      color: #FFFFFF;
@@ -91,29 +78,26 @@
      transition: transform 0.5s ease, box-shadow 0.2s ease;
      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
    }
-   
-   .reg-btn:hover{
+   .login-btn:hover{
      transform: translateY(-2px);
      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
    }
-   .reg-box:hover{
+   .loginbox:hover{
      transform: translateY(-6px);
      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
   }
-  .reg-box input:hover{
+  .loginbox input:hover{
      transform: translateY(-2px);
      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
   }
-  
-  .login{
+  .register{
    font-size:0.7rem;
    color:#FFFFFF;
    margin-top:15px;
   }
-  
-   .login a{
+  .register a{
    display:inline-block;
-   background-color:#3B6978;
+   background-color:#FF8C42;
    color:#ffffff;
    padding:6px 12px;
    border:none;
@@ -124,30 +108,29 @@
    margin-right:5px;
    transition: background-color 2.0 ease , transform 2.0 ease;
    }
-   
-  .login a:hover{
-   background-color: #3B6978;
+  .register a:hover{
+   background-color: #FFD3A3;
    color:#102027;
    transform: translateY(-4px);
-   }
-   
+  }
   .brand:hover{
     transform: translateY(-6px);
   }
-
  </style>
  <body>
-   <div class=brand><h1> CSE<h1></div>
-   <div class=reg-box>
-     <h2>REGISTER<h2>
-     <label for="name">ENTER YOUR NAME</label>
-     <input type="textbox" id="name" placeholder="Full name"/>
-     <label for="gmail">ENTER YOUR GMAIL</label>
-     <input type="textbox" id="gmail" placeholder="example@gmail.com"/>
-     <label for="password">CREATE A PASSWORD</label>
-     <input type="password" id="password" placeholder="atleast 8 characters"/>
-     <button class="reg-btn">Register</button>
-     <p class=login>Already have an account?<a href="index.html">click here to Login.</a></p>
-   </div>
+ <div class=container>
+    <div class=brand><h1>CSE</h1></div>
+    <div class=loginbox>
+      <h2>REGISTER</h2>
+      <label for=name>NAME</label>
+      <input type="textbox" id="name" placeholder="Enter your name"> 
+      <label for=gmail>GMAIL</label>
+      <input type="textbox" id="gmail" placeholder="example@gmail.com"/>
+      <label for=password>PASSWORD</label>
+      <input type="password" id="password" placeholder="Create a password"/>
+      <button class="login-btn">Register</button>
+ </div>
+    <p class=register>Already have an account?<a href="CSE_login.html">click here</a>to go to login page.</p>
  </body>
 </html>
+  
